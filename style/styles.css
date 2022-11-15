@@ -34,22 +34,24 @@ header {
     right: 0;
 }
 
-nav, ul{
+nav  {
     display: flex;
+    flex-direction: row-reverse;
 }
 
 nav ul {
-    
+    display: flex;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     gap: 2em;
+    padding: 1em;
 }
 
 nav ul li {
+    display: block;
     width: 100%;
-    border-bottom: 2px solid rgba(255, 255, 255, .3);
 }
 
 nav ul li a {
@@ -134,4 +136,10 @@ main .box .box-content {
     text-decoration: none;
     border-radius: 5px;
     background: #86b604;
+}
+
+@media (min-width: 768px) {
+    main > img {
+        float: right;
+    }
 }
